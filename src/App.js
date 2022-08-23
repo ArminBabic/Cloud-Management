@@ -3,6 +3,8 @@ import Navbar from "./components/Navbar";
 import About from "./components/About";
 import Support from "./components/Support";
 import Platfrom from "./components/Platfrom";
+import Pricing from "./components/Pricing";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -12,6 +14,8 @@ function App() {
       <About />
       <Support />
       <Platfrom />
+      <Pricing />
+      <Footer />
     </>
   );
 }

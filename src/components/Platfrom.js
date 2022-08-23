@@ -6,7 +6,7 @@ function Platfrom() {
     <section className="w-full my-32">
       <div className="max-w-[1240px] mx-auto px-2">
         <header className="text-center py-6">
-          <h2 className="text-5xl font-bold py-6">All-in-One-Platform</h2>
+          <h2 className="text-5xl font-bold py-8">All-in-One-Platform</h2>
           <p className="text-xl text-gray-600">
             lorem ipsum ini ahbsab ipphsi kkaa hi dijet gind ka liop pise .
             lorem ipsum ini ahbsab ipphsi kkaa hi.
