@@ -1,9 +1,12 @@
 import React, { useState } from "react";
+import { Link, animateScroll as scroll } from "react-scroll";
 
 import { MenuIcon, XIcon } from "@heroicons/react/outline";
 
 function Navbar() {
   const [nav, setNav] = useState(false);
+
+  const closeNavHandler = () => setNav(!nav);
 
   const navHandler = () => {
     setNav(!nav);
@@ -15,11 +18,31 @@ function Navbar() {
         <div className="flex items-center">
           <h2 className="text-3xl font-bold mr-4 sm:text-4xl">Cloud</h2>
           <ul className="hidden md:flex ">
-            <li>Home</li>
-            <li>About</li>
-            <li>Support</li>
-            <li>Platforms</li>
-            <li>Pricing</li>
+            <li className="cursor-pointer hover:underline ">
+              <Link to="home" smooth={true} duration={500}>
+                Home
+              </Link>
+            </li>
+            <li className="cursor-pointer hover:underline">
+              <Link to="about" smooth={true} offset={-200} duration={500}>
+                About
+              </Link>
+            </li>
+            <li className="cursor-pointer hover:underline">
+              <Link to="support" smooth={true} offset={-50} duration={500}>
+                Support
+              </Link>
+            </li>
+            <li className="cursor-pointer hover:underline">
+              <Link to="platforms" smooth={true} offset={-50} duration={500}>
+                Platforms
+              </Link>
+            </li>
+            <li className="cursor-pointer hover:underline">
+              <Link to="pricing" smooth={true} offset={-50} duration={500}>
+                Pricing
+              </Link>
+            </li>
           </ul>
         </div>
         <div className="hidden md:flex pr-4">
@@ -34,11 +57,61 @@ function Navbar() {
       </main>
 
       <ul className={!nav ? "hidden" : "absolute bg-zinc-200 w-full px-8"}>
-        <li className="border-b-2 border-zinc-300 w-full">Home</li>
-        <li className="border-b-2 border-zinc-300 w-full">About</li>
-        <li className="border-b-2 border-zinc-300 w-full">Support</li>
-        <li className="border-b-2 border-zinc-300 w-full">Platforms</li>
-        <li className="border-b-2 border-zinc-300 w-full">Pricing</li>
+        <li className="border-b-2 border-zinc-300 w-full cursor-pointer hover:underline">
+          <Link
+            onClick={closeNavHandler}
+            to="home"
+            smooth={true}
+            duration={500}
+          >
+            Home
+          </Link>
+        </li>
+        <li className="border-b-2 border-zinc-300 w-full cursor-pointer hover:underline">
+          <Link
+            onClick={closeNavHandler}
+            to="about"
+            smooth={true}
+            offset={-200}
+            duration={500}
+          >
+            About
+          </Link>
+        </li>
+        <li className="border-b-2 border-zinc-300 w-full cursor-pointer hover:underline">
+          <Link
+            onClick={closeNavHandler}
+            to="support"
+            smooth={true}
+            offset={-50}
+            duration={500}
+          >
+            Support
+          </Link>
+        </li>
+        <li className="border-b-2 border-zinc-300 w-full cursor-pointer hover:underline">
+          <Link
+            onClick={closeNavHandler}
+            to="platforms"
+            smooth={true}
+            offset={-50}
+            duration={500}
+          >
+            Platforms
+          </Link>
+        </li>
+        <li className="border-b-2 border-zinc-300 w-full cursor-pointer hover:underline">
+          <Link
+            onClick={closeNavHandler}
+            to="pricing"
+            smooth={true}
+            offset={-50}
+            duration={500}
+          >
+            Pricing
+          </Link>
+        </li>
+
         <div className="flex flex-col my-4">
           <button className=" bg-transparent text-indigo-600 px-8 py-2 mb-4">
             Sign in

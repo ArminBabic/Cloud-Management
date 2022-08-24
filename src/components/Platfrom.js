@@ -3,7 +3,7 @@ import { CheckIcon } from "@heroicons/react/solid";
 
 function Platfrom() {
   return (
-    <section className="w-full my-32">
+    <section name="platforms" className="w-full my-32">
       <div className="max-w-[1240px] mx-auto px-2">
         <header className="text-center py-6">
           <h2 className="text-5xl font-bold py-8">All-in-One-Platform</h2>
