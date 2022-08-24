@@ -1,3 +1,30 @@
+Cloud Managment web page with React and Tailwind CSS
+#Mobile responsive
+DEMO:https://tranquil-spire-25006.herokuapp.com/
+
+Screenshoots:
+![image](https://user-images.githubusercontent.com/91044351/186366419-1be5f328-4a27-479e-be13-c7256bdb29d1.png)
+
+![image](https://user-images.githubusercontent.com/91044351/186366520-27508b0b-0c64-4474-97f2-d90c02a813c2.png)
+
+![image](https://user-images.githubusercontent.com/91044351/186366644-26b9a8e8-7d36-45cd-96d5-750fb2937e84.png)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
